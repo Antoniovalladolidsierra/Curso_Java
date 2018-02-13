@@ -1,0 +1,13 @@
+/* Programa Cine:
+ * Pelicula interesante, dinero,horario, lugar, compañia, transporte.
+ */
+public class ProgramaCine3 {
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+	{System.out.println("Introduzca su nombre");
+			// Empezando
+	}
+		}
+

@@ -1,0 +1,29 @@
+package EjemplosArrays;
+
+public class EjemplosArrays {
+	
+	static  int i;
+	
+	public static void main(String[] args) {
+
+		int[] arrayEnteros;
+		arrayEnteros = new int[5];
+		arrayEnteros[0] = 7;
+		arrayEnteros[1] = 9;
+		arrayEnteros[2] = 11;
+		arrayEnteros[3] = 12;
+		arrayEnteros[4] = 1;
+		
+		// todos
+		System.out.println("Todos los datos");
+		for(i = 0; i< 5; i++) {
+			System.out.println("array = " + arrayEnteros[i]);
+		}
+		//Cuadrado
+		System.out.println("Cruadrado");
+		for (i = 0; i < arrayEnteros.length; i++) {
+			arrayEnteros[i] = i * i;
+			System.out.println("Array = " + arrayEnteros);
+		}
+	}
+}

@@ -1,0 +1,79 @@
+package EjemplosArrays;
+
+public class EjemplosArrays {
+	
+	static  int i;
+	static int j;
+	
+	public static void main(String[] args) {
+		
+		int[] otroArray = { 5, 10, 15, 20, 25};
+	
+		
+		int[] arrayEnteros;
+		arrayEnteros = new int[5];
+		arrayEnteros[0] = 7;
+		arrayEnteros[1] = 9;
+		arrayEnteros[2] = 11;
+		arrayEnteros[3] = 12;
+	    arrayEnteros[4] = 1;
+
+		todosNumeros();
+		cuadrado();
+		tercios();
+		elemento();
+		giorni();
+		giorniWhile();
+	}
+		
+	public static void todosNumeros() {
+		int[] arrayEnteros;
+		arrayEnteros = new int[5];
+		// todos
+			System.out.println("Todos los datos");
+		for(i = 0; i< 5; i++) {
+			System.out.println("array = " + arrayEnteros[i]);
+		}
+	}
+	public static void cuadrado() {
+		//Cuadrado
+		int[] ArrayEnteros;
+		ArrayEnteros = new int[5];
+			System.out.println("Cruadrado");
+		for (i = 0; i < ArrayEnteros.length; i++) {
+			ArrayEnteros[i] = i * i;
+			System.out.println("Array " + i + " = " + ArrayEnteros[i]);
+		}
+	}
+	public static void tercios() {
+			System.out.println("Tercios");
+	float[] decimales = new float[10];
+	for (j = 0; j < decimales.length; j++) {
+		decimales[j] = j / 3f;
+			System.out.println("El tercio de " + j + " = " + decimales[j]);
+		}
+	}
+	public static void elemento() {
+		int[] otroArray = { 5, 10, 15, 20, 25};
+			System.out.println("Elemento");
+		for (int elemento : otroArray) {
+			System.out.println("Elemento = " + elemento);
+		}
+	}
+	public static void giorni(){
+		String[] diasSemana = {"Lunes, Martes, Miercoles, Jueves, Viernes, Sabado, Domingo"};
+			System.out.println("Dias de la semana");
+			for (String dias : diasSemana) {
+			System.out.println (dias);
+		}
+	}
+	public static void giorniWhile(){
+		int numDia = 0;
+		String dias = dias[d];
+		while (numDia < dias.length) {
+			System.out.println(dias [numDia]);
+			numDia ++;
+		}
+	}
+	
+}

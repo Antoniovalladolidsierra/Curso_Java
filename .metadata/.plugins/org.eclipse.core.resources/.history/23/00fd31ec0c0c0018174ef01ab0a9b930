@@ -1,0 +1,27 @@
+/* Programa Cine:
+ * Pelicula interesante, dinero,horario, lugar, compañia, transporte.
+ */
+import java.util.Scanner;
+
+public class ProgramaCine3 
+{
+	public static void main(String[] args) 
+{
+	double precioEntrada = 7.50;
+
+	System.out.println("Introduzca su nombre");
+	Scanner escaner = new Scanner(System.in);
+	String nombre = escaner.nextLine();
+	System.out.println("El nombre es " + nombre);
+	
+	int capital = escaner.nextInt();
+	System.out.println("La entrada cuesta 7,50$, ¿tienes dinero?" + capital);
+	
+	if (capital < precioEntrada) {
+		System.out.println("No podemos ir al cine");
+	} else { 
+		System.out.println("Si podemos ir al cine");
+	}
+}
+
+}

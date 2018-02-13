@@ -1,0 +1,28 @@
+/* Programa Cine:
+ * Pelicula interesante, dinero,horario, lugar, compañia, transporte.
+ */
+public class ProgramaCine3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			System.out.println("V3 - Programa Cine");
+			// Empezando
+			int x = 8;
+			int y = 10;
+			int z = 5
+			int k = 3
+			int resultadoSuma = sumarNumeros(x, y);
+			int resultadoResta = restarNumeros(z, k);
+			System.out.println("Resultado = " + resultadoSuma);
+	}
+	public static int sumarNumeros(int valor_1, int valor_2) {
+		return valor_1 + valor_2;
+	}
+		{
+			public static int restarNumeros(int valor_3, int valor_4);
+			return valor_3 - valor_4;
+			System.out.println("Resultado = " - Resultadoresta)
+		
+		}
+	}
+

@@ -1,0 +1,20 @@
+package EjemplosArrays;
+
+public class EjemplosArrays {
+
+	public static void main(String[] args) {
+			
+		int[] arrayEnteros;
+		arrayEnteros = new int[5];
+		arrayEnteros[0] = 7;
+		arrayEnteros[1] = 9;
+		arrayEnteros[2] = 11;
+		arrayEnteros[3] = 12;
+		arrayEnteros[4] = 1;
+		
+		for( int i = 0; i< 5; i = i +1) {
+			System.out.println("array(0) = " + arrayEnteros[i]);
+
+	}
+
+}

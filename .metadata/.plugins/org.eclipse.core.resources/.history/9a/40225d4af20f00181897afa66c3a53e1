@@ -1,0 +1,25 @@
+package EjemplosArrays;
+
+public class EjemplosArrays {
+	
+
+	public static void main(String[] args) {
+		static  int i
+		int[] arrayEnteros;
+		arrayEnteros = new int[5];
+		arrayEnteros[0] = 7;
+		arrayEnteros[1] = 9;
+		arrayEnteros[2] = 11;
+		arrayEnteros[3] = 12;
+		arrayEnteros[4] = 1;
+		
+		// todos
+		for(i = 0; i< 5; i++) {
+			System.out.println("array = " + arrayEnteros[i]);
+		}
+		//Cuadrado
+		for (i = 0; i < 5; i++) {
+			arrayEnteros[i] = i * i;
+		}
+	}
+}

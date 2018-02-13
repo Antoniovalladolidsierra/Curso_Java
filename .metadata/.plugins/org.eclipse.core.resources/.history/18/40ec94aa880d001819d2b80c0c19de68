@@ -1,0 +1,42 @@
+package com.incyde;
+import java.util.Scanner;
+
+public class ProgramaPrincipal {
+	
+	static float capital = 0f;
+	static float precio = 7.5f;
+	
+	public static void main(String[] args) {
+	boolean resultadoCine;
+	
+		System.out.println("Programa Cine 4");
+		pedirDatos();
+		comprobarSiVamosAlCine();
+		resultadoCine = comprobarSiVamosAlCine();
+		mostrarResultado(resultadoCine);
+
+	}
+	public static void pedirDatos() {
+			System.out.println("Introduzca datos");
+		Scanner escaner = new Scanner(System.in);
+		String nombre = escaner.nextLine();
+			System.out.println("no me importa :)  " + nombre);
+		
+	}
+	public static boolean comprobarSiVamosAlCine() {
+		System.out.println("El precio de la entrada son 7,50$, indica cuanto tienes");
+	Scanner dinero = new Scanner(System.in);
+	Float capital = dinero.nextFloat(); 
+		if (capital >= precio)
+			return true;
+		else
+			return false;
+	}
+	public static void mostrarResultado(boolean resultado) {
+		if (resultado == true) {
+			System.out.println("Sí que podemos ir al cine");
+		} else {
+			System.out.println("No podemos ir al cine");
+		}
+	}
+}

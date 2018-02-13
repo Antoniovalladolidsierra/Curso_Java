@@ -1,0 +1,17 @@
+package EjemplosArrays;
+
+public class EjemplosArrays {
+
+	public static void main(String[] args) {
+			
+		int[] arrayEnteros;
+		arrayEnteros = new int[5];
+		arrayEnteros[0] = 7;
+		arrayEnteros[1] = 9;
+		
+		System.out.println("array(0)" + arrayEnteros[0]);
+		System.out.println("array(1)" + arrayEnteros[1]);
+		System.out.println("array(2)" + arrayEnteros[2]);
+	}
+
+}

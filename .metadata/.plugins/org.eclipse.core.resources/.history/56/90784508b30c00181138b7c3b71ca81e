@@ -1,0 +1,11 @@
+package com.mipaquete;
+
+public class EjemplosBooleanos {
+
+	public static void FuncionPrincipal() {
+		// TODO Auto-generated method stub
+			System.out.println("Ejemplos Booleanos");
+			
+	}
+
+}

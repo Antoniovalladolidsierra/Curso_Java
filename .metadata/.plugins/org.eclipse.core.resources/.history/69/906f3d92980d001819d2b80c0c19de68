@@ -1,0 +1,60 @@
+package com.incyde;
+import java.util.Scanner;
+
+public class ProgramaPrincipal {
+	
+	static float capital;
+	static float precio = 7.5f;	
+	
+	static int horaCine_1 = 17;
+	static int horaCine_2 = 19;
+	static int horaDeseada ;
+	static String nombre;
+	static Scanner teclado;
+	
+	public static void main(String[] args) {
+	boolean resultadoCine;
+	
+	teclado = new Scanner(System.in);
+	
+		System.out.println("Programa Cine 4");
+		pedirDatos();
+		comprobarSiVamosAlCine();
+		resultadoCine = comprobarSiVamosAlCine();
+		mostrarResultado(resultadoCine);
+		horarioCine();
+
+	teclado.close();
+
+	}
+	public static void pedirDatos() {
+			System.out.println("Introduzcan sus nombres ");
+		nombre = teclado.nextLine();
+			System.out.println("no me importan :)  " + nombre);
+			System.out.println("El precio de la entrada son 7,50$, indica cuanto tienes");
+		capital = teclado.nextFloat(); 
+		System.out.println("Indique la hora deseada");
+		horaDeseada = teclado.nextInt();
+		return;
+	}
+	public static boolean comprobarSiVamosAlCine() {
+	
+		if (capital >= precio) {
+			if (horaDeseada <= horaCine_1 && horaDeseada >= horaCine_1 - 1)
+				return true;
+		}else {
+			return false; }
+		return false;
+	}
+	public static void mostrarResultado(boolean resultado) {
+		if (resultado == true) {
+			System.out.println("Sí podemos ir al cine");
+		} else {
+			System.out.println("No podemos ir al cine");
+		}
+	}
+	public static void horarioCine() {
+		
+		
+	}
+}

@@ -1,0 +1,30 @@
+package EjemplosArrays;
+
+public class EjemplosArrays {
+	
+	static  int i;
+	
+	public static void main(String[] args) {
+
+		int[] arrayEnteros;
+		arrayEnteros = new int[5];
+		
+		// todos
+		System.out.println("Todos los datos");
+		for(i = 0; i< 5; i++) {
+			System.out.println("array = " + arrayEnteros[i]);
+		}
+		//Cuadrado
+		System.out.println("Cruadrado");
+		for (i = 0; i < arrayEnteros.length; i++) {
+			arrayEnteros[i] = i * i;
+			System.out.println("Array = " + i + " es" + arrayEnteros[i]);
+		}
+		System.out.println("Tercios");
+		float[] decimales = new float[10];
+		for (int j = 0; j < decimales.length; j++) {
+			decimales[j] = j / 3f;
+			System.out.println("El tercio de " + j + " es " + decimales[j]);
+		}
+	}
+}
